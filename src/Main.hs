@@ -1,4 +1,8 @@
-module Main where
+module Main (
+    main
+) where
+
+import CLI.Pages
 
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = do clear; page1
