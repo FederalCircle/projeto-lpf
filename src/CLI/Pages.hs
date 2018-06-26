@@ -2,7 +2,9 @@ module CLI.Pages (
     clear,
     page1,
     page2,
-    page3
+    page3,
+    register,
+    login
 ) where
 
 import Data.Char
@@ -21,6 +23,47 @@ selectOption fs = do
     else do
         clear
         fs !! opt
+
+inputField :: IO ()
+inputField = do
+    value <- getLine
+    putStrLn value
+    return ()
+
+header :: IO ()
+header = do
+    clear
+    putStrLn "_______________"
+    putStrLn "0 - Previus"
+    putStrLn "---------------"
+    putStrLn " "
+    return ()
+
+register :: IO ()
+register = do
+    header
+    putStrLn "Type your complete name:"
+    inputField
+    putStrLn "Type your e-mail:"
+    inputField
+    putStrLn "Type your birthday:"
+    inputField
+    putStrLn "Type your cpf:"
+    inputField
+    header
+    putStrLn "Successful registration!"
+    return ()
+
+login :: IO ()
+login = do 
+    header
+    putStrLn "Type your cpf:"
+    inputField
+    putStrLn "Type your password:"
+    inputField
+    putStrLn "Successful login!"
+    return ()
+
 
 page1 :: IO ()
 page1 = do
