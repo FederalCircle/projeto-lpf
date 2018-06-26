@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\bin"
-libdir     = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.4.3\\projeto-lpf-0.1.0.0-4cRsDe2RFStLqVV7OSWb7B"
-dynlibdir  = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.4.3"
-datadir    = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.4.3\\projeto-lpf-0.1.0.0"
-libexecdir = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\projeto-lpf-0.1.0.0-4cRsDe2RFStLqVV7OSWb7B\\x86_64-windows-ghc-8.4.3\\projeto-lpf-0.1.0.0"
-sysconfdir = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\etc"
+bindir     = "/Users/alyson.maia.queiroz/Library/Haskell/bin"
+libdir     = "/Users/alyson.maia.queiroz/Library/Haskell/ghc-8.4.3-x86_64/lib/projeto-lpf-0.1.0.0"
+dynlibdir  = "/Users/alyson.maia.queiroz/Library/Haskell/ghc-8.4.3-x86_64/lib/x86_64-osx-ghc-8.4.3"
+datadir    = "/Users/alyson.maia.queiroz/Library/Haskell/share/ghc-8.4.3-x86_64/projeto-lpf-0.1.0.0"
+libexecdir = "/Users/alyson.maia.queiroz/Library/Haskell/libexec/x86_64-osx-ghc-8.4.3/projeto-lpf-0.1.0.0"
+sysconfdir = "/Users/alyson.maia.queiroz/Library/Haskell/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "projeto_lpf_bindir") (\_ -> return bindir)
@@ -47,4 +47,4 @@ getSysconfDir = catchIO (getEnv "projeto_lpf_sysconfdir") (\_ -> return sysconfd
 getDataFileName :: FilePath -> IO FilePath
 getDataFileName name = do
   dir <- getDataDir
-  return (dir ++ "\\" ++ name)
+  return (dir ++ "/" ++ name)

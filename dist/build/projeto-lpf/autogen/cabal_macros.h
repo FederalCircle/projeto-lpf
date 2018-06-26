@@ -44,15 +44,15 @@
   (major1) == 3 && (major2) == 2 && (minor) <= 4)
 #endif /* MIN_TOOL_VERSION_alex */
 
-/* tool gcc-7.2.0 */
+/* tool gcc-4.2.1 */
 #ifndef TOOL_VERSION_gcc
-#define TOOL_VERSION_gcc "7.2.0"
+#define TOOL_VERSION_gcc "4.2.1"
 #endif /* TOOL_VERSION_gcc */
 #ifndef MIN_TOOL_VERSION_gcc
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
-  (major1) <  7 || \
-  (major1) == 7 && (major2) <  2 || \
-  (major1) == 7 && (major2) == 2 && (minor) <= 0)
+  (major1) <  4 || \
+  (major1) == 4 && (major2) <  2 || \
+  (major1) == 4 && (major2) == 2 && (minor) <= 1)
 #endif /* MIN_TOOL_VERSION_gcc */
 
 /* tool ghc-8.4.3 */
@@ -142,17 +142,6 @@
   (major1) == 8 && (major2) <  4 || \
   (major1) == 8 && (major2) == 4 && (minor) <= 3)
 #endif /* MIN_TOOL_VERSION_runghc */
-
-/* tool strip-2.29 */
-#ifndef TOOL_VERSION_strip
-#define TOOL_VERSION_strip "2.29"
-#endif /* TOOL_VERSION_strip */
-#ifndef MIN_TOOL_VERSION_strip
-#define MIN_TOOL_VERSION_strip(major1,major2,minor) (\
-  (major1) <  2 || \
-  (major1) == 2 && (major2) <  29 || \
-  (major1) == 2 && (major2) == 29 && (minor) <= 0)
-#endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID
 #define CURRENT_COMPONENT_ID "projeto-lpf-0.1.0.0-4cRsDe2RFStLqVV7OSWb7B-projeto-lpf"
