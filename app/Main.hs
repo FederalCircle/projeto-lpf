@@ -4,7 +4,9 @@ module Main (
 
 import Utils.System
 import CLI.Pages
-import CLI.Layout
 
 main :: IO ()
-main = do clear; homePage
+main = do
+    clear
+    homePage
+    return ()

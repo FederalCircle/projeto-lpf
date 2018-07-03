@@ -1,6 +1,5 @@
 module CLI.Inputs (
-    selectOption,
-    inputField
+    selectOption
 ) where
 
 import Utils.System
@@ -25,9 +24,3 @@ selectOption fs = do
     else do
         clear
         fs !! opt
-
-inputField :: IO ()
-inputField = do
-    value <- getLine
-    putStrLn value
-    return ()

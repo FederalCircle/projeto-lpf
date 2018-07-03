@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 15c33b33f697c81cb6e34f998afcec7e54c907d132c5f583008d52150f529f8f
+-- hash: e7e9030e0e6c5bf717a567795bc236194f0d4b0a002c2cfca4022d65354c9715
 
 name:           projeto-lpf
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
       CLI.Inputs
       CLI.Layout
       CLI.Pages
+      Objects.Client
       Utils.System
   other-modules:
       Paths_projeto_lpf
