@@ -30,10 +30,10 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\bin"
-libdir     = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.4.3\\projeto-lpf-0.1.0.0-K52TUZmEb6p8KzrcQiM3rQ"
-dynlibdir  = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.4.3"
-datadir    = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.4.3\\projeto-lpf-0.1.0.0"
-libexecdir = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\projeto-lpf-0.1.0.0-K52TUZmEb6p8KzrcQiM3rQ\\x86_64-windows-ghc-8.4.3\\projeto-lpf-0.1.0.0"
+libdir     = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.2.1\\projeto-lpf-0.1.0.0-3Yuf9dXZX26HUMwaoroqCx"
+dynlibdir  = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.2.1"
+datadir    = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\x86_64-windows-ghc-8.2.1\\projeto-lpf-0.1.0.0"
+libexecdir = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\projeto-lpf-0.1.0.0-3Yuf9dXZX26HUMwaoroqCx\\x86_64-windows-ghc-8.2.1\\projeto-lpf-0.1.0.0"
 sysconfdir = "C:\\Users\\Alyson\\AppData\\Roaming\\cabal\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
